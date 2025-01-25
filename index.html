@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Lecture 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 7rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 900px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+            font-weight: bold;
+        }
+
+        form input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table td {
+            border: 1px solid #dee2e6;
+            padding: 0.8rem;
+            text-align: center;
+        }
+
+        table td:first-child {
+            font-weight: bold;
+        }
+
+        table td:first-child {
+            background: #e9ecef;
+        }
+
+        table tr td:first-child {
+            background: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background: #343a40;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #343a40;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#services">Services</a></li>
+                <li><a href="#movie">Favourite Movie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>My Services</h2>
+            <table>
+                <tr>
+                    <td>Programming</td>
+                    <td>C++</td>
+                    <td>Java</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Node.js</td>
+                </tr>
+                <tr>
+                    <td>Game Development</td>
+                    <td>Unity</td>
+                    <td>Unreal Engine</td>
+                    <td>Android Studio</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="movie">
+            <h2>Favourite Movie</h2>
+            <h4>One of the greatest movies of all time</h4>
+            <video src="kgf.mp4" controls></video>
+        </section>
+
+        <section id="contact">
+            <h2>Say something about me</h2>
+            <form action="">
+                <label for="email">Email </label>
+                <input type="text" id="email" required placeholder="Enter Email">
+                <br>
+                <label for="telephone">Contact </label>
+                <input type="text" id="telephone" required placeholder="Enter Phone Number">
+                <br>
+                <label for="message">Message </label>
+                <input type="text" id="message" required placeholder="Enter Message">
+                <br>
+                <button>Submit</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Asfand Ahmed, a passionate web developer.</p>
+
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank">
+                    <img src="gmail.png" alt="Gmail">
+                </a>
+                <a href="https://www.facebook.com/example" target="_blank">
+                    <img src="fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/example" target="_blank">
+                    <img src="insta.jpeg" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Made by Asfand Ahmed</p>
+    </footer>
+</body>
+
+</html>
