@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Engineering Lecture 2</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                
+                <li><a href="#services">Services</a></li>
+                <li><a href="#movie">Favourite Movie</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2>My Services</h2>
+            <table>
+                <tr>
+                    <td>Programming</td>
+                    <td>C++</td>
+                    <td>Java</td>
+                    <td>Python</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>Node.js</td>
+                </tr>
+                <tr>
+                    <td>Game Development</td>
+                    <td>Unity</td>
+                    <td>Unreal Engine</td>
+                    <td>Android Studio</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="movie">
+            <h2>Favourite Movie</h2>
+            <h4>One of the greatest movies of all time</h4>
+            <video src="../resources/kgf.mp4" controls></video>
+        </section>
+
+        <section id="contact">
+            <h2>Say something about me</h2>
+            <form action="">
+                <label for="email">Email </label>
+                <input type="text" id="email" required placeholder="Enter Email">
+                <br>
+                <label for="telephone">Contact </label>
+                <input type="text" id="telephone" required placeholder="Enter Phone Number">
+                <br>
+                <label for="message">Message </label>
+                <input type="text" id="message" required placeholder="Enter Message">
+                <br>
+                <button>Submit</button>
+            </form>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Asfand Ahmed, a passionate web developer.</p>
+
+            <div class="social-icons">
+                <a href="mailto:example@gmail.com" target="_blank">
+                    <img src="../resources/gmail.png" alt="Gmail">
+                </a>
+                <a href="https://www.facebook.com/example" target="_blank">
+                    <img src="../resources/fb.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/example" target="_blank">
+                    <img src="../resources/insta.jpeg" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Made by Asfand Ahmed</p>
+    </footer>
+</body>
+
+</html>
